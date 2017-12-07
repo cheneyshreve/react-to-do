@@ -34,8 +34,8 @@ import React, { Component } from 'react';
   }
 
   deleteToDo(index){
-    const todos = this.state.todos.slice();
-    const itemToDelete = todos[index];
+    const todoList = this.state.todos.slice();
+    const itemToDelete = todoList[index];
     const filtered = this.state.todos.filter((item) =>
     item !== itemToDelete);
     this.setState({ todos: filtered });
